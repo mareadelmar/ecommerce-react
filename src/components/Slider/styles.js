@@ -31,6 +31,7 @@ export const Wrapper = styled.div`
 	height: 100%;
 	display: flex;
 	transform: translateX(0vw);
+	background-color: #${props => props.bg};
 `;
 
 export const Slide = styled.div`
