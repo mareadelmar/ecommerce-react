@@ -30,8 +30,8 @@ export const Arrow = styled.div`
 export const Wrapper = styled.div`
 	height: 100%;
 	display: flex;
-	transform: translateX(0vw);
-	background-color: #${props => props.bg};
+	transform: translateX(${props => props.slideIndex * -100}vw);
+	transition: all 1.5s ease;
 `;
 
 export const Slide = styled.div`
@@ -39,6 +39,7 @@ export const Slide = styled.div`
 	width: 100vw;
 	display: flex;
 	align-items: center;
+	background-color: #${props => props.bg};
 `;
 
 export const ImgContainer = styled.div`

@@ -20,6 +20,12 @@ const Slider = () => {
 
 	const handleClick = direction => {
 		console.log(direction);
+
+		if (direction === "left") {
+			setSlideIndex(prev => (prev > 0 ? prev - 1 : 2));
+		} else {
+			setSlideIndex(prev => (prev < 2 ? prev + 1 : 0));
+		}
 	};
 
 	return (
@@ -28,7 +34,7 @@ const Slider = () => {
 				<ArrowBackIosIcon />
 			</Arrow>
 
-			<Wrapper>
+			<Wrapper slideIndex={slideIndex}>
 				{sliderItems.map(item => (
 					<Slide bg={item.bg} key={item.id}>
 						<ImgContainer>
