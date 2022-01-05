@@ -3,7 +3,7 @@ import { Container, Img, Details, Title, Button } from "./styles";
 
 const CategoryItem = ({ category }) => {
 	return (
-		<Container key={category.id}>
+		<Container>
 			<Img src={category.img} />
 			<Details>
 				<Title>{category.title}</Title>

@@ -49,7 +49,7 @@ export const ImgContainer = styled.div`
 
 export const DetailContainer = styled.div`
 	flex: 1;
-	padding: 2.5em;
+	padding: 5em;
 `;
 
 export const Img = styled.img`
