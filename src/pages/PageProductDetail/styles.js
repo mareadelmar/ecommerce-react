@@ -66,3 +66,39 @@ export const SizeFilter = styled.select`
 	border: 0.5px solid lightgray;
 	background-color: transparent;
 `;
+
+export const AddContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 70%;
+`;
+
+export const AmountBox = styled.div`
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 600;
+`;
+
+export const Amount = styled.span`
+	height: 32px;
+	width: 32px;
+	border-radius: 4px;
+	border: 1px solid lightgrey;
+	display: grid;
+	place-items: center;
+	margin: 0 0.5em;
+`;
+
+export const Button = styled.button`
+	border: 2px solid var(--color-accent);
+	background-color: transparent;
+	padding: 0.75em;
+	cursor: pointer;
+	font-weight: 600;
+
+	&:hover {
+		background-color: #f2f2f2;
+	}
+`;

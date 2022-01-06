@@ -12,6 +12,10 @@ import {
 	SizeFilter,
 	FilterType,
 	FilterColor,
+	AddContainer,
+	AmountBox,
+	Amount,
+	Button,
 } from "./styles";
 
 const PageProductDetail = () => {
@@ -52,6 +56,15 @@ const PageProductDetail = () => {
 							</SizeFilter>
 						</div>
 					</FilterContainer>
+
+					<AddContainer>
+						<AmountBox>
+							<span>+</span>
+							<Amount>1</Amount>
+							<span>-</span>
+						</AmountBox>
+						<Button>ADD TO CART</Button>
+					</AddContainer>
 				</TextContainer>
 			</Wrapper>
 		</Container>
