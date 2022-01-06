@@ -1,11 +1,5 @@
 import React from "react";
-import {
-	Container,
-	FilterContainer,
-	FilterType,
-	Select,
-	Option,
-} from "./styles";
+import { Container, FilterContainer, FilterType, Select } from "./styles";
 import Products from "../../components/Products";
 
 const PageProducts = () => {
@@ -16,26 +10,26 @@ const PageProducts = () => {
 				<div>
 					<FilterType>Filter products:</FilterType>
 					<Select>
-						<Option disabled selected>
+						<option disabled selected>
 							Color
-						</Option>
-						<Option>White</Option>
-						<Option>Black</Option>
-						<Option>Red</Option>
-						<Option>Blue</Option>
-						<Option>Green</Option>
-						<Option>Pink</Option>
+						</option>
+						<option>White</option>
+						<option>Black</option>
+						<option>Red</option>
+						<option>Blue</option>
+						<option>Green</option>
+						<option>Pink</option>
 					</Select>
 					<Select>
-						<Option disabled selected>
+						<option disabled selected>
 							Size
-						</Option>
-						<Option>XXS</Option>
-						<Option>XS</Option>
-						<Option>M</Option>
-						<Option>L</Option>
-						<Option>XL</Option>
-						<Option>XXL</Option>
+						</option>
+						<option>XXS</option>
+						<option>XS</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+						<option>XXL</option>
 					</Select>
 				</div>
 				<div>

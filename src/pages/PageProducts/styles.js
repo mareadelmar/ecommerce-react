@@ -18,5 +18,3 @@ export const Select = styled.select`
 	border: 0.5px solid lightgray;
 	background-color: transparent;
 `;
-
-export const Option = styled.option``;
