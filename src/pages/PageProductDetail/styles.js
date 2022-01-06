@@ -6,6 +6,14 @@ export const Wrapper = styled.div`
 	display: flex;
 `;
 
+export const FilterContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	margin: 2em 0;
+`;
+
 export const ImgContainer = styled.div`
 	flex: 1;
 `;
@@ -30,4 +38,31 @@ export const Price = styled.p`
 	font-weight: 300;
 	font-size: 32px;
 	margin: 0.5em 0;
+`;
+
+export const FilterType = styled.span`
+	font-weight: 300;
+	margin: 0 0.25em;
+	font-size: 20px;
+`;
+
+export const FilterColor = styled.div`
+	display: flex;
+	align-items: center;
+`;
+
+export const ColorOption = styled.div`
+	width: 32px;
+	height: 32px;
+	background-color: ${props => props.color};
+	margin: 0 0.25em;
+	border-radius: 50%;
+	cursor: pointer;
+`;
+
+export const SizeFilter = styled.select`
+	padding: 0.5em;
+	margin: 0 0.25em;
+	border: 0.5px solid lightgray;
+	background-color: transparent;
 `;

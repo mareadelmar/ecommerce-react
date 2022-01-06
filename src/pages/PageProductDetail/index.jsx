@@ -7,6 +7,11 @@ import {
 	TextContainer,
 	Title,
 	Price,
+	ColorOption,
+	FilterContainer,
+	SizeFilter,
+	FilterType,
+	FilterColor,
 } from "./styles";
 
 const PageProductDetail = () => {
@@ -25,6 +30,28 @@ const PageProductDetail = () => {
 						mollitia!
 					</p>
 					<Price>$ 20</Price>
+
+					<FilterContainer>
+						<FilterColor>
+							<FilterType>Color</FilterType>
+							<ColorOption color='black' />
+							<ColorOption color='darkblue' />
+							<ColorOption color='darkred' />
+						</FilterColor>
+
+						<div>
+							<FilterType>Size</FilterType>
+							<SizeFilter>
+								<option>XXS</option>
+								<option>XS</option>
+								<option>S</option>
+								<option>M</option>
+								<option>L</option>
+								<option>XL</option>
+								<option>XXL</option>
+							</SizeFilter>
+						</div>
+					</FilterContainer>
 				</TextContainer>
 			</Wrapper>
 		</Container>
