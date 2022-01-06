@@ -20,7 +20,7 @@ const Navbar = () => {
 					<SearchIcon />
 					<Input />
 				</Search>
-				<Logo>LAMA.</Logo>
+				<Logo>LAMAR.</Logo>
 				<Menu>
 					<MenuItem>REGISTER</MenuItem>
 					<MenuItem>SIGN IN</MenuItem>
