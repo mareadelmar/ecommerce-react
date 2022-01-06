@@ -1,13 +1,27 @@
 import React from "react";
-import { Container, Title, Text, InputContainer, Input } from "./styles";
+import {
+	Container,
+	Title,
+	Text,
+	InputContainer,
+	Input,
+	Button,
+} from "./styles";
+import SendIcon from "@mui/icons-material/Send";
 
 const Newsletter = () => {
 	return (
 		<Container>
-			<Title></Title>
-			<Text></Text>
+			<Title>Newsletter</Title>
+			<Text>
+				Subscribe to our newsletter to get all the news about your
+				favorite product
+			</Text>
 			<InputContainer>
-				<Input />
+				<Input placeholder='Email' />
+				<Button>
+					<SendIcon />
+				</Button>
 			</InputContainer>
 		</Container>
 	);
