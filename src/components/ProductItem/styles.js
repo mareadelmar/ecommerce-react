@@ -59,7 +59,7 @@ export const Icon = styled.div`
 	margin: 10px;
 
 	&:hover {
-		*background: #f2f2f2;
+		background: var(--color-pink);
 		transform: scale(1.1);
 	}
 `;

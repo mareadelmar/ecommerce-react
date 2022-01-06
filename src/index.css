@@ -13,3 +13,10 @@ body {
 *:after {
 	box-sizing: border-box;
 }
+
+:root {
+	--color-accent: teal;
+	--color-red: #fcf1ed;
+	--color-pink: #fbf0f4;
+	--color-blue: #f5fafd;
+}

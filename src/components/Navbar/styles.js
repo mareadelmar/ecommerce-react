@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-	height: 60px;
+	*height: 60px;
 `;
 
 export const Wrapper = styled.div`
@@ -29,7 +29,8 @@ export const Logo = styled.h1`
 	flex: 1;
 	font-weight: bolder;
 	text-align: center;
-	font-size: 32px;
+	font-size: 48px;
+	margin: 8px;
 `;
 
 export const Menu = styled.div`
