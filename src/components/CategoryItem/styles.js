@@ -33,7 +33,7 @@ export const Title = styled.h3`
 export const Button = styled.button`
 	background-color: white;
 	border: 0;
-	padding: 8px;
+	padding: 0.75em;
 	cursor: pointer;
 	font-weight: 600;
 	color: #666;
