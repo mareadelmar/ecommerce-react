@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkRouter } from "react-router-dom";
 
 export const Icons = styled.div`
 	opacity: 0;
@@ -62,4 +63,9 @@ export const Icon = styled.div`
 		background: var(--color-pink);
 		transform: scale(1.1);
 	}
+`;
+
+export const Link = styled(LinkRouter)`
+	text-decoration: none;
+	color: black;
 `;

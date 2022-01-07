@@ -16,9 +16,14 @@ function App() {
 				<Navbar />
 				<Routes>
 					<Route path='/' element={<Home />} />
-					<Route path='products' element={<PageProducts />} />
-					<Route path='product/:id' element={<PageProductDetail />} />
-					<Route path='cart' element={<PageCart />} />
+					<Route path='/products' element={<PageProducts />}>
+						<Route
+							path='details/:id'
+							element={<PageProductDetail />}
+						/>
+					</Route>
+					<Route path='/cart' element={<PageCart />} />
+					<Route path='*' element={<h1>NOT FOUND</h1>} />
 				</Routes>
 			</BrowserRouter>
 			<Footer />

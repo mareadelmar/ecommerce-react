@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Circle, Img, Icons, Icon } from "./styles";
+import { Container, Circle, Img, Icons, Icon, Link } from "./styles";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
@@ -14,7 +14,9 @@ const ProductItem = ({ product }) => {
 						<ShoppingCartOutlinedIcon />
 					</Icon>
 					<Icon>
-						<SearchOutlinedIcon />
+						<Link to='details/1'>
+							<SearchOutlinedIcon />
+						</Link>
 					</Icon>
 					<Icon>
 						<FavoriteBorderOutlinedIcon />
