@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkRouter } from "react-router-dom";
 
 export const Container = styled.section`
 	*height: 60px;
@@ -25,10 +26,15 @@ export const Input = styled.input`
 	width: 100%;
 `;
 
-export const Logo = styled.h1`
-	flex: 1;
-	font-weight: bolder;
+export const Link = styled(LinkRouter)`
+	text-decoration: none;
 	text-align: center;
+	flex: 1;
+	color: black;
+`;
+
+export const Logo = styled.h1`
+	font-weight: bolder;
 	font-size: 48px;
 	margin: 8px;
 `;

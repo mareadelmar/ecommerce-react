@@ -10,6 +10,7 @@ import {
 	Input,
 	Menu,
 	MenuItem,
+	Link,
 } from "./styles.js";
 
 const Navbar = () => {
@@ -20,15 +21,19 @@ const Navbar = () => {
 					<SearchIcon />
 					<Input />
 				</Search>
-				<Logo>LAMAR.</Logo>
+				<Link to='/'>
+					<Logo>LAMAR.</Logo>
+				</Link>
 				<Menu>
 					<MenuItem>REGISTER</MenuItem>
 					<MenuItem>SIGN IN</MenuItem>
 
 					<MenuItem>
-						<Badge badgeContent={1} color='secondary'>
-							<ShoppingCartIcon />
-						</Badge>
+						<Link to='cart'>
+							<Badge badgeContent={1} color='secondary'>
+								<ShoppingCartIcon />
+							</Badge>
+						</Link>
 					</MenuItem>
 				</Menu>
 			</Wrapper>
