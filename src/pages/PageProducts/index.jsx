@@ -13,33 +13,33 @@ const PageProducts = () => {
 						<option disabled selected>
 							Color
 						</option>
-						<option>White</option>
-						<option>Black</option>
-						<option>Red</option>
-						<option>Blue</option>
-						<option>Green</option>
-						<option>Pink</option>
+						<option value='White'>White</option>
+						<option value='Black'>Black</option>
+						<option value='Red'>Red</option>
+						<option value='Blue'>Blue</option>
+						<option value='Green'>Green</option>
+						<option value='Pink'>Pink</option>
 					</Select>
 					<Select>
 						<option disabled selected>
 							Size
 						</option>
-						<option>XXS</option>
-						<option>XS</option>
-						<option>M</option>
-						<option>L</option>
-						<option>XL</option>
-						<option>XXL</option>
+						<option value='XXS'>XXS</option>
+						<option value='XS'>XS</option>
+						<option value='M'>M</option>
+						<option value='L'>L</option>
+						<option value='XL'>XL</option>
+						<option value='XXL'>XXL</option>
 					</Select>
 				</div>
 				<div>
 					<FilterType>Sort products:</FilterType>
 					<Select>
-						<Option disabled selected>
+						<option disabled selected>
 							Newest
-						</Option>
-						<Option>Price (asc)</Option>
-						<Option>Price (desc)</Option>
+						</option>
+						<option value='price-asc'>Price (asc)</option>
+						<option value='price-desc'>Price (desc)</option>
 					</Select>
 				</div>
 			</FilterContainer>
