@@ -5,6 +5,7 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 const ProductItem = ({ product }) => {
+	console.log(product);
 	return (
 		<Container>
 			<Circle>
@@ -14,7 +15,7 @@ const ProductItem = ({ product }) => {
 						<ShoppingCartOutlinedIcon />
 					</Icon>
 					<Icon>
-						<Link to='details/1'>
+						<Link to={`details/${product.id}`}>
 							<SearchOutlinedIcon />
 						</Link>
 					</Icon>

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { popularProducts } from "../../db";
 import {
 	Container,
 	Wrapper,
@@ -19,11 +21,27 @@ import {
 } from "./styles";
 
 const PageProductDetail = () => {
+	const [product, setProduct] = useState(null);
+	const { id } = useParams();
+
+	useEffect(() => {
+		const item = popularProducts.filter(
+			product => product.id === Number(id)
+		);
+		console.log("item", item, id);
+		setProduct(item);
+	}, []);
+
+	const handleAdd = () => {
+		console.log("add to cart", itemId);
+	};
+
+	if (!product) return <p>Loading...</p>;
 	return (
 		<Container>
 			<Wrapper>
 				<ImgContainer>
-					<Img src='' alt='' />
+					<Img src={product.img} alt='' />
 				</ImgContainer>
 				<TextContainer>
 					<Title>produc title</Title>
@@ -63,7 +81,7 @@ const PageProductDetail = () => {
 							<Amount>1</Amount>
 							<span>-</span>
 						</AmountBox>
-						<Button>ADD TO CART</Button>
+						<Button onClick={handleAdd}>ADD TO CART</Button>
 					</AddContainer>
 				</TextContainer>
 			</Wrapper>
