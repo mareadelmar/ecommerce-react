@@ -17,11 +17,15 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/products' element={<PageProducts />}>
-						<Route
+						{/* <Route
 							path='details/:id'
 							element={<PageProductDetail />}
-						/>
+						/> */}
 					</Route>
+					<Route
+						path='/details/:id'
+						element={<PageProductDetail />}
+					/>
 					<Route path='/cart' element={<PageCart />} />
 					<Route path='*' element={<h1>NOT FOUND</h1>} />
 				</Routes>
