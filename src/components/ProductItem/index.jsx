@@ -6,12 +6,17 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 
 const ProductItem = ({ product }) => {
 	console.log(product);
+
+	const handleAdd = () => {
+		console.log("add to cart", product.id);
+	};
+
 	return (
 		<Container>
 			<Circle>
 				<Img src={product.img} />
 				<Icons>
-					<Icon>
+					<Icon onClick={handleAdd}>
 						<ShoppingCartOutlinedIcon />
 					</Icon>
 					<Icon>
@@ -19,9 +24,9 @@ const ProductItem = ({ product }) => {
 							<SearchOutlinedIcon />
 						</Link>
 					</Icon>
-					<Icon>
+					{/* <Icon>
 						<FavoriteBorderOutlinedIcon />
-					</Icon>
+					</Icon> */}
 				</Icons>
 			</Circle>
 		</Container>

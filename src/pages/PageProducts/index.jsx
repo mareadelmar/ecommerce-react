@@ -5,7 +5,6 @@ import Products from "../../components/Products";
 const PageProducts = () => {
 	return (
 		<Container>
-			<h2>title</h2>
 			<FilterContainer>
 				<div>
 					<FilterType>Filter products:</FilterType>
