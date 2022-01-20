@@ -3,6 +3,9 @@ import { Link as LinkRouter } from "react-router-dom";
 
 export const Container = styled.div`
 	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 `;
 
 export const Link = styled(LinkRouter)`
@@ -17,6 +20,7 @@ export const Title = styled.h1`
 `;
 
 export const Wrapper = styled.div`
+	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
 `;
