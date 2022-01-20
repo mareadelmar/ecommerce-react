@@ -30,7 +30,7 @@ const Navbar = () => {
 
 					<MenuItem>
 						<Link to='cart'>
-							<Badge badgeContent={1} color='secondary'>
+							<Badge badgeContent={2} color='secondary'>
 								<ShoppingCartIcon />
 							</Badge>
 						</Link>

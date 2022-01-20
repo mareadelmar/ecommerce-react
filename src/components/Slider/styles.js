@@ -5,6 +5,7 @@ export const Container = styled.div`
 	width: 100%;
 	display: flex;
 	position: relative;
+	margin: 2em 0 5em;
 `;
 
 export const Arrow = styled.div`
