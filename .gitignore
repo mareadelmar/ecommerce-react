@@ -3,3 +3,10 @@ node_modules
 dist
 dist-ssr
 *.local
+.vercel
+build
+dist
+public
+.firebase/
+.firebaserc
+firebase.json
